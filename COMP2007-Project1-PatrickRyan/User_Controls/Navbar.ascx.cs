@@ -35,14 +35,17 @@ namespace COMP2007_Project1_PatrickRyan
                 case "Home Page":
                     home.Attributes.Add("class", "active");
                     break;
-                case "Students":
-                    students.Attributes.Add("class", "active");
+                case "Game Register":
+                    gameregister.Attributes.Add("class", "active");
                     break;
-                case "Courses":
-                    courses.Attributes.Add("class", "active");
+                case "Register":
+                    register.Attributes.Add("class", "active");
                     break;
-                case "Departments":
-                    departments.Attributes.Add("class", "active");
+                case "Login":
+                    login.Attributes.Add("class", "active");
+                    break;
+                case "About":
+                    about.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");

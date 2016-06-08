@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_PatrickRyan
-{
-
-
-    public partial class Navbar
-    {
-
+namespace COMP2007_Project1_PatrickRyan {
+    
+    
+    public partial class Navbar {
+        
         /// <summary>
         /// home control.
         /// </summary>
@@ -22,34 +20,43 @@ namespace COMP2007_Project1_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        
         /// <summary>
-        /// students control.
+        /// gameregister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl students;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameregister;
+        
         /// <summary>
-        /// courses control.
+        /// register control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl courses;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl register;
+        
         /// <summary>
-        /// departments control.
+        /// login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl departments;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl login;
+        
+        /// <summary>
+        /// about control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl about;
+        
         /// <summary>
         /// contact control.
         /// </summary>

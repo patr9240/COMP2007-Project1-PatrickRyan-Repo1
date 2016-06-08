@@ -11,7 +11,7 @@ namespace COMP2007_Project1_PatrickRyan
 {
 
 
-    public partial class Courses
+    public partial class Login
     {
     }
 }
