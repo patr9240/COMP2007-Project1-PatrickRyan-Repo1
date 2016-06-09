@@ -1,4 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="COMP2007_Project1_PatrickRyan.Navbar" %>
+<!-- 
+     Navbar.acsx
+     Patrick Ross - Ryan Jameson
+     COMP2007-Project1-PatrickRyan
+     This is the Navbar user control
+    -->
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->

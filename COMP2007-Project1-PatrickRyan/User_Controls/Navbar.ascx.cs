@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Patrick Ross
+ * @author: Patrick Ross - Ryan Jameson
  * @date: June 6th, 2016
  * @version: 0.0.2 - Updated setActivePage method to include new links
  */

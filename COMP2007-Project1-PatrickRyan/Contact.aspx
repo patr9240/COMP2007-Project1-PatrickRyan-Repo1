@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="COMP2007_Project1_PatrickRyan.contact" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- 
+     Contact.aspx
+     Patrick Ross - Ryan Jameson
+     COMP2007-Project1-PatrickRyan
+     This is the Contact page for NorthStar Game Tracking
+    -->
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-6 text-center">

@@ -1,6 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="COMP2007_Project1_PatrickRyan.Site" %>
 
 <%@ Register Src="~/User_Controls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
+<!-- 
+     Site.Master
+     Patrick Ross - Ryan Jameson
+     COMP2007-Project1-PatrickRyan
+     This is the main master page used throughout the website
+    -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
-    <!-- Adding favicon that works for all devices -->
+    <!-- Adding favicons that works for all devices -->
     <link rel="apple-touch-icon" sizes="57x57" href="/Assets/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/Assets/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/Assets/apple-touch-icon-72x72.png">
