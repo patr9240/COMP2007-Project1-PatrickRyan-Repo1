@@ -7,11 +7,11 @@
      COMP2007-Project1-PatrickRyan
      This is the game registeration page for NorthStar Tracking
     -->
-    <div class="container">
+      <div class="container">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <h1>Add a Game</h1>
-                <h5>All fields are Required</h5>
+                <h5> All fields are Required</h5>
                 <br />
                 <div class="form-group">
                     <label class="control-label" for="GameNameTextBox">Game Name</label>
@@ -42,11 +42,11 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="WinningTeamTextBox" placeholder="Winnign Team" required="true"></asp:TextBox>
                 </div>
                 <div class="text-right">
-                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="tbn btn-warning btn-lg" runat="server" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
-                    <asp:Button Text="Save" ID="SaveButton" CssClass="tbn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
+                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="tbn btn-warning btn-lg" runat="server" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click"/>
+                    <asp:Button Text="Save" ID="SaveButton" CssClass="tbn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click"/>
                 </div>
             </div>
         </div>
     </div>
-
+        
 </asp:Content>

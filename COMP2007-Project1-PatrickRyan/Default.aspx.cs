@@ -19,14 +19,14 @@ namespace COMP2007_Project1_PatrickRyan
             if (!IsPostBack)
             {
 
-                //get the Department data
+                //get the games data
                 this.GetGames();
             }
         }
 
         /**
          * <summary>
-         * This method gets the gamesa from the database
+         * This method gets the games from the database
          * </summary>
          * @method GetGames
          * @return {void}
@@ -42,6 +42,43 @@ namespace COMP2007_Project1_PatrickRyan
                 //bind results to gridview
                 GamesGridView.DataSource = Games.AsQueryable().ToList();
                 GamesGridView.DataBind();
+            }
+        }
+
+        /**
+         * <summary>
+         * This event handler deletes a game from the databse using EF
+         * </summary>
+         * @method GamesGridView_RowDeleting
+         * @param {object} sender
+         * @param {GridViewDeleteEventArgs}
+         * @returns {void}
+         * */
+        protected void GamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            //store which row was clicked
+            int selectedRow = e.RowIndex;
+
+            //get the selected gamename using the grids datakey collection
+            int GameID = Convert.ToInt32(GamesGridView.DataKeys[selectedRow].Values["GameID"]);
+
+            //use ef to find the slected game and delete it
+            using (GameTrackerConnection db = new GameTrackerConnection())
+            {
+                //create object of the game class and store the query string inside of it
+                Game deletedGame = (from gameRecords in db.Games
+                                                where gameRecords.GameID == GameID
+                                                select gameRecords).FirstOrDefault();
+
+                //remove the selected game from the db
+                db.Games.Remove(deletedGame);
+
+                //save db changes
+                db.SaveChanges();
+
+                //refresh gridview
+                this.GetGames();
+
             }
         }
     }

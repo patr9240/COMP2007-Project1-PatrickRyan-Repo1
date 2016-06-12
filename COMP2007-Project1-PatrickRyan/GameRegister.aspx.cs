@@ -18,7 +18,8 @@ namespace COMP2007_Project1_PatrickRyan
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-
+            //return user to games page
+            Response.Redirect("~/Default.aspx");
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
@@ -29,7 +30,7 @@ namespace COMP2007_Project1_PatrickRyan
                 // use the Games model to create a new Game object and save a new record
                 Game newGame = new Game();
 
-                int DepartmentID = 0;
+                int GameID = 0;
 
                 // add form data to the new games record
                 newGame.GameName = GameNameTextBox.Text;
@@ -39,11 +40,11 @@ namespace COMP2007_Project1_PatrickRyan
                 newGame.Team1 = Team1TextBox.Text;
                 newGame.Team2 = Team2TextBox.Text;
                 newGame.WinningTeam = WinningTeamTextBox.Text;
-                newGame.Created = DateTime.UtcNow.Date;// dateTime.ToString("dd/MM/yyyy")
+                newGame.Created = DateTime.Now.Date; //dateTime.ToString("dd/MM/yyyy")
 
-                // use LINQ to ADO.NET to add / insert new department into the database
+                // use LINQ to ADO.NET to add / insert new game into the database
 
-                if (DepartmentID == 0)
+                if (GameID == 0)
                 {
                     db.Games.Add(newGame);
                 }
@@ -52,7 +53,7 @@ namespace COMP2007_Project1_PatrickRyan
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated departments page
+                // Redirect back to the updated games page
                 Response.Redirect("~/Default.aspx");
             }
         }
