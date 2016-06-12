@@ -61,6 +61,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.5840.25917, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -141,6 +145,16 @@
       <DependentUpon>ContosoModel.edmx</DependentUpon>
       <LastGenOutput>ContosoModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\GameTrackerModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+      <LastGenOutput>GameTrackerModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GameTrackerModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+      <LastGenOutput>GameTrackerModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Register.aspx" />
     <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
@@ -159,6 +173,13 @@
       <DependentUpon>ContosoModel.edmx</DependentUpon>
     </Content>
     <Content Include="Assets\manifest.json" />
+    <EntityDeploy Include="Models\GameTrackerModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GameTrackerModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GameTrackerModel.edmx.diagram">
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
@@ -236,8 +257,29 @@
     <Compile Include="Models\Enrollment.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Game.cs">
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTrackerModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTrackerModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTrackerModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTrackerModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Student.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Team.cs">
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

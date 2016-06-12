@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_PatrickRyan
-{
-
-
-    public partial class _default
-    {
-
+namespace COMP2007_Project1_PatrickRyan {
+    
+    
+    public partial class _default {
+        
         /// <summary>
         /// Jumbotron1 control.
         /// </summary>
@@ -22,5 +20,14 @@ namespace COMP2007_Project1_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::COMP2007_Project1_PatrickRyan.User_Controls.Jumbotron Jumbotron1;
+        
+        /// <summary>
+        /// GamesGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GamesGridView;
     }
 }

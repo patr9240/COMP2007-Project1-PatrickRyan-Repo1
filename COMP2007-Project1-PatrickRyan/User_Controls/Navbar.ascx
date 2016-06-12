@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="Default.aspx">
                 <img src='/Assets/android-chrome-48x48.png' class="pull-left" alt="NorthStar Logo"></a>
             <a class="pull-left" href="Default.aspx">
-                <h3>NorthStar Game Tracking</h3>
+                <h3>NorthStar Tracking</h3>
             </a>
 
         </div>

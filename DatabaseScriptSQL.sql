@@ -1,0 +1,46 @@
+/*Games Table*/
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].Games(
+	[GameID] [int] IDENTITY (4000, 1) NOT NULL,
+	[GameName] [varchar](35) NOT NULL,
+	[Description] [varchar](500) NOT NULL,
+	[Runs] [int] NOT NULL,
+	[Spectators] [int] NOT NULL,
+	[Team1] [varchar](35) NOT NULL,
+	[Team2] [varchar](35) NOT NULL,
+	[WinningTeam] [varchar](35) NOT NULL,
+	[Created] [DATE] NOT NULL,
+ CONSTRAINT [PK_Games] PRIMARY KEY CLUSTERED 
+(
+	[GameID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+
+/*teams table*/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Teams](
+	[TeamID] [int] IDENTITY (4000, 1) NOT NULL,
+	[TeamName] [varchar](35) NOT NULL,
+	[Description] [varchar](500) NOT NULL,
+	[Sport] [varchar](35) NOT NULL,
+	[City] [varchar](35) NOT NULL,
+	[TotalRuns] [int] NOT NULL,
+	[AllowedRuns] [int] NOT NULL,
+ CONSTRAINT [PK_Teams] PRIMARY KEY CLUSTERED 
+(
+	[TeamID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
