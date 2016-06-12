@@ -23,7 +23,7 @@ nav {
      background: -webkit-linear-gradient(#3f9a15, #388813, #3f9a15, #388813, #3f9a15);
      background: -o-linear-gradient(#3f9a15, #388813, #3f9a15, #388813, #3f9a15);
      background: linear-gradient(#3f9a15, #388813, #3f9a15, #388813, #3f9a15);
-     -moz-border-radius: 6px !important;
+     -moz-border-radius: 
         }
 .nav a{
     color: white !important;
@@ -37,7 +37,7 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
+
   height: 70px;
 }
 
@@ -48,4 +48,12 @@ nav {
 */
 .container .text-muted {
   margin: 20px 0;
+}
+.About{
+    margin-left: 638px;
+    border-bottom-style:solid;
+    border-bottom-width:thick;
+}
+.Contact{
+    margin-left: 850px;
 }

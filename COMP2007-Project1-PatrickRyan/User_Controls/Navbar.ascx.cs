@@ -44,12 +44,6 @@ namespace COMP2007_Project1_PatrickRyan
                 case "Login":
                     login.Attributes.Add("class", "active");
                     break;
-                case "About":
-                    about.Attributes.Add("class", "active");
-                    break;
-                case "Contact":
-                    contact.Attributes.Add("class", "active");
-                    break;
             }
         }
     }

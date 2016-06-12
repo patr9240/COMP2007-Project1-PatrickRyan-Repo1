@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_PatrickRyan
-{
-
-
-    public partial class Site
-    {
-
+namespace COMP2007_Project1_PatrickRyan {
+    
+    
+    public partial class Site {
+        
         /// <summary>
         /// head control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace COMP2007_Project1_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace COMP2007_Project1_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// PrimaryNav control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace COMP2007_Project1_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::COMP2007_Project1_PatrickRyan.Navbar PrimaryNav;
-
+        
         /// <summary>
         /// MainContent control.
         /// </summary>
