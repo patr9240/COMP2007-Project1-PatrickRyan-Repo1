@@ -7,6 +7,9 @@
      COMP2007-Project1-PatrickRyan
      This is the home page for NorthStar Tracking
     -->
+    <div class="img1">
+        <img src="Assets/baseball.gif" />
+    </div>
 
     <div class="container">
         <div class="row">

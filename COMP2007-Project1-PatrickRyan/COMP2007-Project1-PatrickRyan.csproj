@@ -103,6 +103,7 @@
     <Content Include="Assets\apple-touch-icon-76x76.png" />
     <Content Include="Assets\apple-touch-icon-precomposed.png" />
     <Content Include="Assets\apple-touch-icon.png" />
+    <Content Include="Assets\baseball.gif" />
     <Content Include="Assets\browserconfig.xml" />
     <Content Include="Assets\favicon-16x16.png" />
     <Content Include="Assets\favicon-32x32.png" />
@@ -114,6 +115,7 @@
     <Content Include="Assets\mstile-310x310.png" />
     <Content Include="Assets\mstile-70x70.png" />
     <Content Include="Assets\safari-pinned-tab.svg" />
+    <Content Include="Assets\teams.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

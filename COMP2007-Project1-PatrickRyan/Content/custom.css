@@ -15,6 +15,7 @@ body {
 	margin: 0px 25px 25px 175px;
     padding-bottom: 4em;
 	border-radius: 4px; 
+    height: 1000px;
 }
 
 nav {
@@ -33,11 +34,7 @@ nav {
     padding-right:5px;
    }
 
-.footer {
-  position: absolute;
-  width: 100%;
 
-}
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -57,4 +54,14 @@ nav {
 }
 form {
     height: 100%;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+}
+.img1{
+    margin-left: 250px;
+}
+.img2{
+    margin-left: 250px;
 }

@@ -7,6 +7,9 @@
      COMP2007-Project1-PatrickRyan
      This is the team information page for NorthStar Tracking
     -->
+    <div class="img2">
+        <img src="Assets/teams.jpg" width="500" height="250" />
+    </div>
     <div class="container">
         <div class="row">
             <div class="container">
