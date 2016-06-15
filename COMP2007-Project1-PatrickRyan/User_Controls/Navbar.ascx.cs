@@ -36,7 +36,7 @@ namespace COMP2007_Project1_PatrickRyan
                     home.Attributes.Add("class", "active");
                     break;
                 case "Game Register":
-                    gameregister.Attributes.Add("class", "active");
+                    home.Attributes.Add("class", "active");
                     break;
                 case "Register":
                     register.Attributes.Add("class", "active");

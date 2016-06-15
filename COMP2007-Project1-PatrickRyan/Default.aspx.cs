@@ -81,5 +81,33 @@ namespace COMP2007_Project1_PatrickRyan
 
             }
         }
+        protected void TrackingWeekDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //connect to EF
+            using (GameTrackerConnection db = new GameTrackerConnection())
+            {
+                DateTime date1 = new DateTime();
+                DateTime date2 = new DateTime();
+                date1 = Convert.ToDateTime(TrackingWeekDropDown.SelectedValue);
+                date2 = Convert.ToDateTime(TrackingWeekDropDown.Items[TrackingWeekDropDown.SelectedIndex + 1].Value);
+
+                //query the Games table using EF and LINQ
+                var Games = (from allGames in db.Games
+                             where allGames.Created >= date1.Date
+                             && allGames.Created < date2.Date
+                             select allGames);
+                if (Games != null)
+                {
+                    //bind results to gridview
+                    GamesGridView.DataSource = Games.AsQueryable().ToList();
+                    GamesGridView.DataBind();
+                }
+                else
+                {
+                    GamesGridView.DataSource = null;
+                    GamesGridView.DataBind();
+                }
+            }
+        }
     }
 }
