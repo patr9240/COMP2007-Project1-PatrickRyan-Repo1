@@ -27,7 +27,7 @@
                         <asp:BoundField DataField="Team1" HeaderText="First Team" Visible="true" />
                         <asp:BoundField DataField="Team2" HeaderText="Second Team" Visible="true" />
                         <asp:BoundField DataField="WinningTeam" HeaderText="Winner" Visible="true" />
-                        <asp:BoundField DataField="Created" HeaderText="Current Date" DataFormatString="{0:d}" Visible="true" />
+                        <asp:BoundField DataField="Created" HeaderText="Current Date" DataFormatString="{0:d}" Visible="false" />
 
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
                             ControlStyle-CssClass="btn btn-danger btn-sm" />
