@@ -9,16 +9,22 @@ using COMP2007_Project1_PatrickRyan.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
+/**
+ * @author: Patrick Ross - Ryan Jameson
+ * @date: June 15th, 2016
+ * @version: 0.0.3 - Populates gridview, change games viewed by date
+ */
+
 namespace COMP2007_Project1_PatrickRyan
 {
     public partial class _default : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //if loading page for the first time, populate the grid
             if (!IsPostBack)
             {
-
                 //get the games data
                 this.GetGames();
             }
@@ -26,14 +32,14 @@ namespace COMP2007_Project1_PatrickRyan
 
         /**
          * <summary>
-         * This method gets the games from the database
+         * This method gets the games from the database and puts them into the gridview based on the date specified in the dropdown menu
          * </summary>
          * @method GetGames
          * @return {void}
          * */
         protected void GetGames()
         {
-            
+
             //connect to EF
             using (GameTrackerConnection db = new GameTrackerConnection())
             {
@@ -51,13 +57,9 @@ namespace COMP2007_Project1_PatrickRyan
                 //bind results to gridview
                 GamesGridView.DataSource = Games.AsQueryable().ToList();
                 GamesGridView.DataBind();
-
-
                 TrackingDateLabel.Text = date1.ToString("MMMM dd, yyyy") + " To " + date2.ToString("MMMM dd, yyyy");
-
             }
         }
-
         /**
          * <summary>
          * This event handler deletes a game from the databse using EF
@@ -80,8 +82,8 @@ namespace COMP2007_Project1_PatrickRyan
             {
                 //create object of the game class and store the query string inside of it
                 Game deletedGame = (from gameRecords in db.Games
-                                                where gameRecords.GameID == GameID
-                                                select gameRecords).FirstOrDefault();
+                                    where gameRecords.GameID == GameID
+                                    select gameRecords).FirstOrDefault();
 
                 //remove the selected game from the db
                 db.Games.Remove(deletedGame);
@@ -94,34 +96,16 @@ namespace COMP2007_Project1_PatrickRyan
 
             }
         }
+        /**
+         * <summary>
+         * This method gets the games from the database and puts them into the gridview when a index is selected in the dropdown
+         * </summary>
+         * @method TrackingWeekDropDown_SelectedIndexChanged
+         * @return {void}
+         * */
         protected void TrackingWeekDropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //connect to EF
-            using (GameTrackerConnection db = new GameTrackerConnection())
-            {
-                DateTime date1 = new DateTime();
-                DateTime date2 = new DateTime();
-                date1 = Convert.ToDateTime(TrackingWeekDropDown.SelectedValue);
-                date2 = Convert.ToDateTime(TrackingWeekDropDown.Items[TrackingWeekDropDown.SelectedIndex + 1].Value);
-
-                //query the Games table using EF and LINQ
-                var Games = (from allGames in db.Games
-                             where allGames.Created >= date1.Date
-                             && allGames.Created < date2.Date
-                             select allGames);
-                if (Games != null)
-                {
-                    //bind results to gridview
-                    GamesGridView.DataSource = Games.AsQueryable().ToList();
-                    GamesGridView.DataBind();
-                }
-                else
-                {
-                    GamesGridView.DataSource = null;
-                    GamesGridView.DataBind();
-                }
-                TrackingDateLabel.Text = date1.ToString("MMMM dd, yyyy") + " To " + date2.ToString("MMMM dd, yyyy");
-            }
+            this.GetGames();
         }
     }
 }

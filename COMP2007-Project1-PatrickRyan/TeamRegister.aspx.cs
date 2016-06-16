@@ -7,6 +7,12 @@ using System.Web.UI.WebControls;
 
 using COMP2007_Project1_PatrickRyan.Models;
 using System.Web.ModelBinding;
+
+/**
+ * @author: Patrick Ross - Ryan Jameson
+ * @date: June 15th, 2016
+ * @version: 0.0.2 - adds a new team to the database
+ */
 namespace COMP2007_Project1_PatrickRyan
 {
     public partial class TeamRegister : System.Web.UI.Page
@@ -16,11 +22,25 @@ namespace COMP2007_Project1_PatrickRyan
 
         }
 
+        /**
+         * <summary>
+         * This method redirects the user back to the team viewing page
+         * </summary>
+         * @method CancelButton_Click
+         * @return {void}
+         * */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Team.aspx");
         }
 
+        /**
+         * <summary>
+         * This method creates a new team object and adds it to the database, redirects the user to team viewing page
+         * </summary>
+         * @method SaveButton_Click
+         * @return {void}
+         * */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server

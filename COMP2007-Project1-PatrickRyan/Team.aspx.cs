@@ -8,6 +8,12 @@ using System.Web.UI.WebControls;
 using COMP2007_Project1_PatrickRyan.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
+
+/**
+ * @author: Patrick Ross - Ryan Jameson
+ * @date: June 15th, 2016
+ * @version: 0.0.1 - adds teams to the teamgridview
+ */
 namespace COMP2007_Project1_PatrickRyan
 {
     public partial class Teams : System.Web.UI.Page

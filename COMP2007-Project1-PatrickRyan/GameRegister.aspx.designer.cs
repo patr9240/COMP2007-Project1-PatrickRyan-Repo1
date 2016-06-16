@@ -49,22 +49,22 @@ namespace COMP2007_Project1_PatrickRyan {
         protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
         
         /// <summary>
-        /// Team1TextBox control.
+        /// Team1DropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Team1TextBox;
+        protected global::System.Web.UI.WebControls.DropDownList Team1DropDownList;
         
         /// <summary>
-        /// Team2TextBox control.
+        /// Team2DropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Team2TextBox;
+        protected global::System.Web.UI.WebControls.DropDownList Team2DropDownList;
         
         /// <summary>
         /// WinningTeamTextBox control.

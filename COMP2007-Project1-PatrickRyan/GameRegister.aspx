@@ -30,16 +30,20 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="SpectatorsTextBox" placeholder="Total Spectators" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="Team1TextBox">First Team</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="Team1TextBox" placeholder="First Team" required="true"></asp:TextBox>
+                    <label class="control-label" for="Team1DropDownList">Select First Team</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="Team1DropDownList" required="true">
+                        <asp:ListItem Text="Select a Team..." Value="Placeholder" />
+                    </asp:DropDownList>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="Team2TextBox">Second Team</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="Team2TextBox" placeholder="Second Team" required="true"></asp:TextBox>
+                    <label class="control-label" for="Team2DropDownList">Select Second Team</label>
+                    <asp:DropDownList runat="server" CssClass="form-control" ID="Team2DropDownList" required="true">
+                        <asp:ListItem Text="Select a Team..." Value="Placeholder" />
+                    </asp:DropDownList>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="WinningTeamTextBox">Winning Team</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="WinningTeamTextBox" placeholder="Winnign Team" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="WinningTeamTextBox" placeholder="Winning Team" required="true"></asp:TextBox>
                 </div>
                 <div class="text-right">
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="tbn btn-warning btn-lg" runat="server" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click"/>

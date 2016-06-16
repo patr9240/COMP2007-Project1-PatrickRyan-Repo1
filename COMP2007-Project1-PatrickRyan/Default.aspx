@@ -39,8 +39,8 @@
             <label for="PageSizeDropDownList"></label>
             <asp:DropDownList runat="server" ID="TrackingWeekDropDown" AutoPostBack="true"
                 CssClass="btn btn-default bt-sm dropdown-toggle" OnSelectedIndexChanged="TrackingWeekDropDown_SelectedIndexChanged">
-                <asp:ListItem Text="First Week" Value="2016-06-12" />
-                <asp:ListItem Text="Second Week" Value="2016-06-14" />
+                <asp:ListItem Text="First Week" Value="2016-06-05" />
+                <asp:ListItem Text="Second Week" Value="2016-06-12" />
                 <asp:ListItem Text="Third Week" Value="2016-06-19" />
                 <asp:ListItem Text="Fourth Week" Value="2016-06-26" />
                 <asp:ListItem Text="Placeholder" Value="2016-07-03" Enabled="False" />
